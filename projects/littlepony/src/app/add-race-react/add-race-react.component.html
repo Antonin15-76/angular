@@ -1,0 +1,12 @@
+<h1> Mettre à jour votre course </h1>
+<form [formGroup]="raceForm" (ngSubmit)="onSubmit()">
+    Lieu <input type="text" id="location" name="location" formControlName="location" pInputText />
+
+    <input type="text" id="date" formControlName="date" name="date" />
+
+    <!-- <div *ngFor="let p of allPonies; let i=index">
+        {{p.name}} <input type="checkbox" name="{{p.name}}" (change)="poniesBool[i] = !poniesBool[i]">
+    </div> -->
+
+    <button type="submit">Enregistrer</button>
+</form>

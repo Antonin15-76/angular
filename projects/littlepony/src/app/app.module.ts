@@ -14,6 +14,12 @@ import { MenuComponent } from './menu/menu.component';
 import { AddRaceComponent } from './add-race/add-race.component';
 import { AddPonyReactComponent } from './add-pony-react/add-pony-react.component';
 import { HttpClientModule } from '@angular/common/http';
+import {InputTextModule} from 'primeng/inputtext';
+import {CardModule} from 'primeng/card';
+import {OrderListModule} from 'primeng/orderlist';
+import {MenuModule} from 'primeng/menu';
+import { AddRaceReactComponent } from './add-race-react/add-race-react.component';
+
 
 const ROUTES: Routes =[
   {path:'', component: PoniesComponent},
@@ -35,7 +41,9 @@ const ROUTES: Routes =[
     AddPonyComponent,
     MenuComponent,
     AddRaceComponent,
-    AddPonyReactComponent
+    AddPonyReactComponent,
+    AddRaceReactComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -44,6 +52,10 @@ const ROUTES: Routes =[
     RouterModule.forRoot(ROUTES),
     ReactiveFormsModule,
     HttpClientModule,
+    InputTextModule,
+    CardModule,
+    OrderListModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

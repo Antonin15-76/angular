@@ -1,6 +1,30 @@
 <p>ponies</p>
-<ul>
-    <li *ngFor="let p of ponies; let i = index;">
-        <app-pony-detail [pony]="p"></app-pony-detail>
-    </li>
-</ul>
+    <p-card>
+        <ul>
+            <li *ngFor="let p of ponies; let i = index;">
+                    <app-pony-detail [pony]="p"></app-pony-detail>
+            </li>
+        </ul>
+    </p-card>
+    <!-- <p-table styleClass="p-datatable-gridlines" responsiveLayout="scroll">
+        <ng-template pTemplate="caption">
+            Header
+        </ng-template> -->
+        <!-- <ng-template pTemplate="header">
+            <tr>
+                <th>Name</th>
+                <th>Couleur</th>
+                <th>Age</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" *ngFor="let p of ponies; let i = index;">
+            <tr>
+                <td>{{pony.name}}</td>
+                <td>{{pony.color}}</td>
+                <td>{{pony.age}}</td>
+            </tr>
+        </ng-template> -->
+        <!-- <ng-template pTemplate="summary">
+            Footer
+        </ng-template>
+    </p-table> -->

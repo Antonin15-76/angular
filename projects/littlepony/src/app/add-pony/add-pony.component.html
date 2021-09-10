@@ -2,7 +2,7 @@
 <h1 *ngIf="!add"> Mettre à jour votre poney </h1>
 <form (ngSubmit)="onSubmit()">
     <label>Nom</label>
-    <input type="text" id="name" name="name" [(ngModel)]="newPony.name" />
+    <input type="text" id="name" name="name" [(ngModel)]="newPony.name" pInputText />
     <br/>
 
     <label>Couleur</label>
